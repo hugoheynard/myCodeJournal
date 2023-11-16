@@ -5,6 +5,9 @@ Input :
     DOMparent : to indicate where the element created must bu inserted
 */
 
+/*
+
+
 const displayPost = (obj, DOMparent) => {
     const blogPost = document.createElement(`div class='blogPost' id=${'postID' + obj.id}`)
 
@@ -13,6 +16,7 @@ const displayPost = (obj, DOMparent) => {
     document.createElement(`h2 id=${'postID' + obj.id}`)
     .innerHTML(`${'#' + obj.id}`);
 }
+*/
 
 const parent = document.getElementById('blogContainer')
 const test = {
@@ -21,7 +25,10 @@ const test = {
 }
 
 
+const displayPost = (parent) => {
+    parent.innerHTML += 'ZOOOOOOB'
+}
 
-module.exports = { displayPost }
+export {displayPost}
 
 
