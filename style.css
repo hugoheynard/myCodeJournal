@@ -3,8 +3,8 @@
     font-size: 18px;
 }
 body {
-    background: rgb(0,21,36);
-background: radial-gradient(90deg, rgba(0,21,36,1) 12%, rgba(9,106,121,1) 84%, rgba(0,212,255,0.029871323529411797) 100%);
+    background-color: #dfd7d3;
+    height: 100%;
 }
 
 .background {
@@ -19,34 +19,42 @@ background: radial-gradient(90deg, rgba(0,21,36,1) 12%, rgba(9,106,121,1) 84%, r
 header {
     display: flex;
     justify-content: space-between;
+    padding: 0.5%;
     background-color: #325D79;
     color: #F9A26C;
-    padding: 1%;
+
+    
     
 }
 
 footer {
     padding: 1%;
+    font-size: 12px;
     background-color: #325D79;
+    color: #F9A26C;
+    text-align: center;
 }
 
 #loginButton {
     border-radius: 0.2rem;
-    height: 50%;
+    height: 20%;
     background-color: #EFEEEE;
     color: #F26627;
 }    
 
 
 p {
-    
     font-weight: 100;
 }
 
-h2 {
+h1 {
     font-weight: 600;
+    font-size: 36px;
     text-transform: uppercase;
-    
+}
+
+h2 {
+    font-size: 30px; 
 }
 
 
@@ -65,9 +73,31 @@ h2 {
 .blogPostContainer {
     border: 1px solid black;
     width: 100%;
-    border-radius: 0.2rem;
+    border-radius: 0.4rem;
+    margin-right: 4%;
 }
 
+.postHeader {
+    display: inline-flex;
+    padding-left: 2%;
+    text-transform: uppercase;
+}
+
+.postBody {
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 18px;
+}
+
+
+.postFooter {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
 
 
 
