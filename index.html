@@ -13,16 +13,18 @@
         <div class="background">
         <header>
             <h1>MY CODE JOURNAL</h1> 
-            <button type="button" id="loginButton">LOGIN</button>
+            <button type="button" id="loginButton" onclick="testclick()">LOGIN</button>
         </header>
         <div id="main-divider">
 
+            <div id="blogContainer">
 
+            
             <!--BLOG POSTS -->
-            <div class="blogPostContainer">
+            <div class="blogPost">
                 <div class="postHeader">
-                    <h2>#01-</h2>
-                    <h2>THE WORST DESIGN CAN BE EVEN WORSE : </h2>
+                    <h2 id="postID">#01-</h2>
+                    <h2 id="postTitle">THE WORST DESIGN CAN BE EVEN WORSE : </h2>
                 </div>
                 <div class="postBody">
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
@@ -31,6 +33,8 @@
                     <p id="postDate">published : 21/16/1714 by Hugo Heynard</p>
                 </div>
             </div>
+
+        </div>
 
             <div id="right-side">
                 <!--Preview of last post-->
