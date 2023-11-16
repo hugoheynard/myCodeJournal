@@ -1,7 +1,103 @@
 * {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+body {
+    background: rgb(0,21,36);
+background: radial-gradient(90deg, rgba(0,21,36,1) 12%, rgba(9,106,121,1) 84%, rgba(0,212,255,0.029871323529411797) 100%);
 }
 
+.background {
+   display: flex;
+   flex-direction: column; 
+   width: 95%;
+   margin: auto;
+   border: 1px solid black;
+   background-color: #EFEEEE;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #325D79;
+    color: #F9A26C;
+    padding: 1%;
+    
+}
+
+footer {
+    padding: 1%;
+    background-color: #325D79;
+}
+
+#loginButton {
+    border-radius: 0.2rem;
+    height: 50%;
+    background-color: #EFEEEE;
+    color: #F26627;
+}    
+
+
 p {
+    
     font-weight: 100;
+}
+
+h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+
+#main-divider {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+
+    
+    
+}
+
+/* BLOG POST */
+.blogPostContainer {
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+
+
+
+
+/* RIGHT SIDE */
+
+#right-side {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    width: 25%;
+    
+}
+
+#lastPost {
+    text-align: justify;
+    background-color: #F9A26C;
+    color: #EFEEEE;
+    
+}
+
+
+#archives {
+    text-align: center;
+    background-color: #EFEEEE;
+    color: #F26627;
+}
+
+#archive_years {
+    list-style:square; 
+    
 }
