@@ -1,20 +1,26 @@
 
-//import { db } from "./my_JS_modules/dbFunctions/dbConnection.js"
-import { displayPost } from "./my_JS_modules/blogFunctions/displayPost.js"
-import { fetchPosts } from "./my_JS_modules/dbFunctions/fetchPosts.js"
+import { fetchPosts } from "./my_JS_modules/dbFunctions/fetchPosts.js";
+import { displayPost } from "./my_JS_modules/blogFunctions/displayPost.js";
 
 
-const getArticle = () => {
-    //db.each()  tous les posts
-}
 
-// display all posts
-fetchPosts().then(postArray => postArray.forEach(post => displayPost(post)))
+const arr = []
 
+fetchPosts().then(postArray => postArray.forEach(post => console.log(post)));
 
 //const button = document.getElementById('loginButton')
-//button.addEventListener ("click", displayPost)
+//button.addEventListener ("click", getArticle)
 
 
+const test = {
+  id:1,
+  title:'he',
+  content: 'he',
+  date: 2022,
+  author: 'hugo'
+}
+
+
+displayPost(test)
 
 

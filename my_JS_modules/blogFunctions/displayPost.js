@@ -4,7 +4,7 @@ Input :
     object  || callback function that generates object from db
 */
 
-const displayPost = (obj) => {
+const displayPost = obj => {
     //DEFINE PARENT CONTAINER
     const blogContainer = document.getElementById('blogContainer');
 
