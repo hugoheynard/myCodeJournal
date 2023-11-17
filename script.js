@@ -1,20 +1,26 @@
 
-import displayPost  from "./my_JS_modules/blogFunctions/displayPosts";
-import db from "./my_JS_modules/dbFunctions/dbConnection";
-
+//import { db } from "./my_JS_modules/dbFunctions/dbConnection.js"
+import { displayPost } from "./my_JS_modules/blogFunctions/displayPost.js"
 
 
 const getArticle = () => {
     //db.each()  tous les posts
 }
 
-const divi = document.getElementById('main-divider')
+const blogContainer = document.getElementById('blogContainer')
 
-const testclick = () => {
-  document.getElementById('main-divider').innerHTML += '<div>ZOOOOB</div>'
-}
+
 
 const button = document.getElementById('loginButton')
+button.addEventListener ("click", displayPost)
 
-button.addEventListener ("click", displayPost, divi)
+const testObjPost = {
+  id:'01',
+  title: 'testTitle1',
+  content: 'this is a test article written in an object',
+  date: '21/11/2023',
+  author: 'Hugo Heynard'
+}
+
+displayPost(testObjPost)
 
