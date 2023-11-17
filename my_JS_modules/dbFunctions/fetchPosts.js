@@ -5,19 +5,9 @@ INPUT : database
 OUTPUT : returns an array
 */
 
-import { db } from './dbConnection';
+import { db } from './dbConnection.js';
+import { generatePostObject } from './generatePostObject.js';
 
-const generatePostObject = dbRow => {
-    postObj = {
-        id: dbRow.id,
-        title: dbRow.title,
-        content: dbRow.content,
-        date: dbRow.content,
-        author: dbRow.author
-    };
-    
-    return postObj;
-}
 
 
 const fetchPost = () => {
@@ -36,3 +26,4 @@ const fetchPost = () => {
 }
 
 export { fetchPost };
+
