@@ -1,15 +1,15 @@
 
-import { fetchPosts } from "./my_JS_modules/dbFunctions/fetchPosts.js";
+//import { fetchPosts } from "./my_JS_modules/dbFunctions/fetchPosts.js";
 import { displayPost } from "./my_JS_modules/blogFunctions/displayPost.js";
 
 
 
 const arr = []
 
-fetchPosts().then(postArray => postArray.forEach(post => console.log(post)));
+//fetchPosts().then(postArray => postArray.forEach(post => console.log(post)));
 
 //const button = document.getElementById('loginButton')
-//button.addEventListener ("click", getArticle)
+//button.addEventListener ("click", console.log, 'he')
 
 
 const test = {
@@ -20,7 +20,10 @@ const test = {
   author: 'hugo'
 }
 
-
 displayPost(test)
+displayPost(test)
+displayPost(test)
+displayPost(test)
+
 
 
