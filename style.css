@@ -10,9 +10,9 @@ body {
 .background {
    display: flex;
    flex-direction: column; 
-   width: 95%;
+   width: 100%;
    margin: auto;
-   border: 1px solid black;
+
    background-color: #EFEEEE;
 }
 
@@ -26,10 +26,15 @@ header {
     
     
 }
+#pageIndex {
+    background-color:#F9A26C; 
+    text-align: center;
+    padding-bottom: 1%;
+}
 
 footer {
     padding: 1%;
-    font-size: 12px;
+    font-size: 11px;
     background-color: #325D79;
     color: #F9A26C;
     text-align: center;
