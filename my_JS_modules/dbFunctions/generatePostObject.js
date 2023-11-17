@@ -9,7 +9,7 @@ const generatePostObject = dbRow => {
         id: dbRow.id,
         title: dbRow.title,
         content: dbRow.content,
-        date: dbRow.content,
+        date: dbRow.date,
         author: dbRow.author
     }
 }

@@ -1,29 +1,26 @@
-/* FETCH POST
-Used to : get all the posts from db and load them ito an array
+/* FETCH POST (PROMISE)
+Used to : get all the posts from db
 NEEDS : import db to access sqlite3 methods
-INPUT : database
-OUTPUT : returns an array
+INPUT : none
+OUTPUT : returns a Promise Array
 */
 
 import { db } from './dbConnection.js';
-import { generatePostObject } from './generatePostObject.js';
 
-
-
-const fetchPost = () => {
-    const postArray = [];
-    db.each(
-        'SELECT * FROM blogPosts',
-        (err, row) => {
-            if (err) {
-                console.log(err)
-            } else {
-                postArray.push(generatePostObject(row));
+const fetchPosts = () => {
+    return new Promise((resolve, reject) => {
+        db.all(
+            'SELECT * FROM blogPost',
+            (err, rows) => {
+                if (err) {
+                    console.log(err)
+                    reject(err)
+                } else {
+                    resolve(rows)
+                }
             }
-        }
-    )
-    return postArray;
-}
+        )
+    }
+)}
 
-export { fetchPost };
-
+export { fetchPosts };
