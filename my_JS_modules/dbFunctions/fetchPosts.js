@@ -5,7 +5,7 @@ INPUT : none
 OUTPUT : returns a Promise Array
 */
 
-import { db } from "./dbConnection.js"
+import { db } from "./admin_dbConnection.js"
 
 const fetchPosts = () => {
     return new Promise((resolve, reject) => {
