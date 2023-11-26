@@ -5,77 +5,287 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
         <title>My Code Journal</title>
         
     </head>
 
     <body>
+         <!-- HEADER -->
         <header>
-            <div class="topHeader">
-                <h1>MY CODE JOURNAL</h1>     
-                <button id="loginButton" >LOGIN</button>
+            <div id="topBarHeader" class="topBarHeader">
+                <h1>MY CODE JOURNAL</h1>
+                <a href="#highlightSection">HIGHLIGHTS</a>
+                <a href="#articlesSection">ARTICLES</a>
+                <a href="#roadmapSection">ROADMAP</a>
+                <a href="#aboutSection">ABOUT</a>
+
+                <div class="topBar_icones">
+                    <a href="https://www.linkedin.com/in/hugoheynard/" target="_blank" rel="noopener noreferrer">
+                        <img src="./icones/github-mark.png" class="tbIco">
+                    </a>
+                    <a href="https://www.linkedin.com/in/hugoheynard/" target="_blank" rel="noopener noreferrer">
+                        <img src="./icones/linkedin.png" alt="LinkedIn Profile" class="tbIco">
+                    </a>
+                    <a href="https://www.linkedin.com/in/hugoheynard/" target="_blank" rel="noopener noreferrer">
+                        <img src="./icones/arrow-right-circle.svg" class="tbIco">
+                    </a>
+                </div>
             </div>
-            <img src="./images/header.jpg" id='titleImg'>
-            <img src="./icones/arrow-right-circle.svg" id="headerArrowIcon">    
+
+            <div id='titleImg' class="headerImgContainer">
+                <img src="./icones/arrow-right-circle.svg" id="headerArrowIcon">    
+            </div>
         </header>
-        
 
+        <!--SECTION 1 A WORD-->
+        <div class="aWord">
+            <h3>A WORD ABOUT THIS JOURNEY</h3>
+            <p>Hey everyone,
+                <br>I just wanted to share that I've recently ventured into the world of web development, and I'm thrilled, albeit a bit overwhelmed. There's so much to learn, and honestly, I feel like I'm navigating through a sea of code with a compass that I'm still figuring out how to use.
+                The excitement is real, though! <br>This blog is a real world experiment, the occasion to test and implement the new techs I add to my stack.<br>Every small victory, every piece of code that finally works, feels like a major achievement. It's like uncovering hidden treasures in the vast landscape of the internet. I may not fully understand what I'm doing just yet, but the journey is what makes it all so fascinating.
+                <br>If anyone has tips, resources, or just some words of encouragement for a newbie like me, I'm all ears (or in this case, eyes). Let's embark on this coding adventure together!
+                <br>Cheers,<br>Hugo</p>
+        </div>
 
+        <!-- SECTION 2 HIGHLIGHT ARTICLES -->
+        <div id="highlightSection" class="highlightArticlesContainer">
+            <!--Left side-->
+            <div class="HAC_thirdColumns">
 
-
-
-
-
-
-
-        
-        <div id="main-divider">
-            <div id="blogContainer"> <!--BLOG POSTS --> </div>
-
-            <div id="right-side">
-                <!--Preview of last post-->
-                <div id="lastPost">
-                    <h3>Title of last post</h3>
-                    <p>short description</p>
-                    <p>21/16/1714</p>
-                    
-                    
-                    
-
-
+                <div class="HAC_sideMiniature" id="articleHighlight2">
+                    <div class="ah_cover">
+                        <div id="ah2_cover"></div>  
+                    </div>
+                    <div class="ah_title">
+                        <h3 id="ah2_title">FLEX</h3>
+                    </div>
+                    <div class="ah_headline">
+                        <p id="ah2_headline">8 HOURS TO GET THAT MOSAIC RIGHT, WORTH IT?</p>
+                    </div>
+                    <div class="highlightOverlay"></div>   
+                </div>
+                
+                <div class="HAC_sideMiniature" id="articleHighlight3">
+                    <div class="ah_cover">
+                        <div id="ah3_cover"></div>  
+                    </div>
+                    <div class="ah_title">
+                        <h3 id="ah3_title">OVERLAY</h3>
+                    </div>
+                    <div class="ah_headline">
+                        <p id="ah3_headline">IS IT EVER GOING TO WORK? TRY VALIUM THE NEW MIND EXPENDING FRAMEWORK</p>
+                    </div>
+                    <div class="highlightOverlay"></div>   
                 </div>
 
-                <!--Archive block, clickable years-->
-                <div id="archives">
-                    <h4>ARCHIVES</h4>
-                    <ul id="archive_years">
-                        <li>2024</li>
-                        <li>2023</li>
-                    </ul>
+            </div>
+
+            <!--CENTER-->
+            <div class="HAC_thirdColumns">
+                <div class="HAC_sideCenterMiniature" id="articleHighlight1">
+                    <div class="ah_cover">
+                        <div id="ah1_cover"></div>  
+                    </div>
+                    <div class="ah_title">
+                        <h3 id="ah1_title">FLEX</h3>
+                    </div>
+                    <div class="ah_headline">
+                        <p id="ah1_headline">8 HOURS TO GET THAT MOSAIC RIGHT, WORTH IT?</p>
+                    </div>
+                    <div class="highlightOverlay"></div>   
                 </div>
+            </div>
 
+            <!--Right side-->
+            <div class="HAC_thirdColumns">
 
+                <div class="HAC_sideMiniature" id="articleHighlight4">
+                    <div class="ah_cover">
+                        <div id="ah4_cover"></div>  
+                    </div>
+                    <div class="ah_title">
+                        <h3 id="ah4_title">FLEX</h3>
+                    </div>
+                    <div class="ah_headline">
+                        <p id="ah4_headline">8 HOURS TO GET THAT MOSAIC RIGHT, WORTH IT?</p>
+                    </div>
+                    <div class="highlightOverlay"></div>   
+                </div>
+                
+                <div class="HAC_sideMiniature" id="articleHighlight5">
+                    <div class="ah_cover">
+                        <div id="ah5_cover"></div>  
+                    </div>
+                    <div class="ah_title">
+                        <h3 id="ah5_title">OVERLAY</h3>
+                    </div>
+                    <div class="ah_headline">
+                        <p id="ah5_headline">IS IT EVER GOING TO WORK? TRY VALIUM THE NEW MIND EXPENDING FRAMEWORK</p>
+                    </div>
+                    <div class="highlightOverlay"></div>   
+                </div>
+                
             </div>
         </div>
         
-        <div id="pageIndex">
-            <h6>PAGES</h6>
-            <div>
-                <button type='button'><</button>
-                <button type='button'>1</button>
-                <button type='button'>2</button>
-                <button type='button'>3</button>
-                <button type='button'>></button>
+        <!-- SECTION 3 CONNECT-->
+        <div class="connect">
+            <h3>WANNA SAY HI? ...DO IT HERE</h3>
+            <div class="connectIcones">
+                <a href="https://www.linkedin.com/in/hugoheynard/" target="_blank" rel="noopener noreferrer">
+                    <img src="./icones/github-mark.png" class="connectIconeSolo">
+                </a>
+                <a href="https://www.linkedin.com/in/hugoheynard/" target="_blank" rel="noopener noreferrer">
+                    <img src="./icones/linkedin.png" alt="LinkedIn Profile" class="connectIconeSolo">
+                </a>
+                <a href="https://www.linkedin.com/in/hugoheynard/" target="_blank" rel="noopener noreferrer">
+                    <img src="./icones/arrow-right-circle.svg" class="connectIconeSolo">
+                </a>
             </div>
-
         </div>
+
+        <!-- SECTION 4 ARTICLES-->
+        <div id="articlesSection">
+            <div class="aWordArticle">
+                <h1 class="artTitleRect">ARTICLES</h1>
+                <h3>LEARN EVERYTHING ABOUT THE WORST WAY TO CURE NEVROSIS AND DEPRESSION</h3>
+                <p> Here are my two cents about my discoveries, mostly to remind myself about the various topics. Feel free to explore and comment on the way I used all those technologies.</p>
+                <a href="">VIEW ALL...</a> 
+            </div>
+            <div class="articlesContainer">   
+                <div class="articleMini">
+                    <div id="artMini1" class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">WHY THIS BLOG?</h4>
+                        <p class="articleMini-Description">What a headline, learning is about practice on project and planning... and I love to suffer ! </p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+                <div class="articleMini">
+                    <div id="artMini2" class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">IS JAVASCRIP A DANCE?</h4>
+                        <p class="articleMini-Description">This is a place </p>
+                    </div>
+                </div>
+                <div class="articleMini">
+                    <div class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">MIGRATION TO WEBSTORM</h4>
+                        <p class="articleMini-Description">Just when I started to get stuff done in VS Code, arrrrrrg !! </p>
+                    </div>
+                </div>
+                <div class="articleMini">
+                    <div id="artMini4" class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">WHAT A HEADLINE</h4>
+                        <p class="articleMini-Description">This is a place </p>
+                    </div>
+                </div>
+                <div class="articleMini">
+                    <div class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">WHAT A HEADLINE</h4>
+                        <p class="articleMini-Description">This is a place </p>
+                    </div>
+                </div>
+                <div class="articleMini">
+                    <div class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">WHAT A HEADLINE</h4>
+                        <p class="articleMini-Description">This is a place </p>
+                    </div>
+                </div>
+                <div class="articleMini">
+                    <div class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">WHAT A HEADLINE</h4>
+                        <p class="articleMini-Description">This is a place </p>
+                    </div>
+                </div>
+                <div class="articleMini">
+                    <div class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">WHAT A HEADLINE</h4>
+                        <p class="articleMini-Description">This is a place </p>
+                        </div>
+                </div>
+                <div class="articleMini">
+                    <div class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">WHAT A HEADLINE</h4>
+                        <p class="articleMini-Description">This is a place </p>
+                    </div>
+                </div>
+                <div class="articleMini">
+                    <div class="articleMini-cover"></div>
+                    <div class="articleMini-content">
+                        <h4 class="aricleMini-Title">WHAT A HEADLINE</h4>
+                        <p class="articleMini-Description">This is a place </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 5 ROADMAP -->
+            <!-- Probleme responsive -->
+        <div id="roadmapSection" class="myTech">
+            <section id="timeline">
+                <div class="myTechBG">
+                    <h2 class="heading">ROADMAP SO FAR...</h2>
+                </div>
+                <ul>
+                  <li>
+                    <i class="fa-brands fa-html5"></i>
+                    <div class="box">
+                      <h3 class="title"><span class="year"> 2023</span>INITIATION</h3>
+                      <p>
+                        <strong>AUG </strong><span></span>HTML / CSS / JAVASCRIPT / NODE JS <br>
+                        <strong>SEPT </strong><span></span>ARRAY METHODS / CLASSES /EXPRESS SERVER <br>
+                        <strong>OCT </strong><span></span>DATA STRUCTURES THEORY HASHMAP / BINARY TREE / LINKED LIST<br>
+                        <strong>NOV </strong><span></span>DB & UNIT TESTING MOCHA SQLITE3<br>
+                        <strong>DEC </strong><span></span>HTML / CSS / JAVASCRIPT / NODE JS <br>
+                        
+        
+                      </p>
+                      <button>Read More</button>
+                    </div>
+                  </li>
+             
+                  <li>
+                    <i class="fa-solid fa-code"></i>
+                    <div class="box">
+                      <h3 class="title"><span class="year">2024</span>...DON'T KNOW YET</h3>
+                      <p>
+                       I will let you know
+                      </p>
+                      <button>Read More</button>
+                    </div>
+                  </li>
+                  
+                </ul>
+            </section>
+        </div>
+        
+        <!-- SECTION 6 ////// -->
+        <div id="aboutSection" class="aboutMe">
+            <div id="mePhoto"></div>
+            <div><h1>ABOUT ME</h1></div>
+        </div>
+            
+
+
+
+   
+        
 
         <footer>
             <p>Lets connect on : </p>
             <div class = "footerSocials">O O O</div>
                 <p>©HUGO HEYNARD</p>
                 <p>2023</p>
+                <button id="loginButton" >LOGIN</button>
         </footer>
         
         <!--JS-->
